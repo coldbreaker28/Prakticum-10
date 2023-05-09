@@ -1,24 +1,5 @@
-# click_counter
+# SKRINSOT ADA DI FOLDER IMAGES
 
-A new Flutter project created with https://flutlab.io
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- https://flutter.dev/docs/get-started/codelab
-- https://flutter.dev/docs/cookbook
-
-For help getting started with Flutter, view our
-https://flutter.dev/docs, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-## Getting Started: FlutLab - Flutter Online IDE
-
-- How to use FlutLab? Please, view our https://flutlab.io/docs
-- Discover a marketplace of ready-to-use Flutter projects https://flutlab.io/widgetbay
-- Join the discussion and conversation on https://flutlab.io/residents
-
-If you have some questions regarding FlutLab, you can ask on https://flutlab.io/faq
+Penjelasan :
+- hal tersebut terjadi karena kita menggunakan widget InkWell untuk memberikan interaksi pada gambar yang ditampilkan. Ketika kita men-tap pada gambar tersebut, maka onTap yang terdapat pada InkWell akan dipanggil, kemudian akan menjalankan fungsi setState() untuk mengubah nilai variabel count yang menyebabkan tampilan angka pada tampilan berubah. Karena setState() memicu pembuatan ulang tampilan, maka angka pada tampilan pun berubah secara otomatis setiap kali kita men-tap pada gambar tersebut.
+- Dalam kode tersebut, onTap diganti dengan onDoubleTap dan onLongPress. onDoubleTap akan dipicu ketika pengguna mengetuk layar dua kali dengan cepat, sementara onLongPress akan dipicu ketika pengguna menekan dan menahan layar selama beberapa waktu. Kedua fungsi tersebut akan memicu penambahan nilai variabel count ketika terpicu.
